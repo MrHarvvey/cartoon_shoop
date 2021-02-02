@@ -7,95 +7,19 @@
 
 
 	<div class="row">
+		{% for product in products %}
 		<div class="col-lg-3">
 			<img class="thumbnail" src="{% static 'images/cartoon.png' %}">
 			<div class="box-element product">
 				<h9><strong>Produkt</strong></h9>
 				<hr>
-				<h9>200x160x100 mm <br/>- opakowanie białe 3-warstwowe<br/></h9>
+				<h9>{{product.name}}<br/>- opakowanie białe 3-warstwowe<br/></h9>
 				<button class="btn btn-outline-secondary add-btn">Dodaj</button>
 				<a class="btn btn-outline-success" href="#">Zobacz</a>
 				<h5 style="display: inline-block;float: right;">30 zł</h5>
 			</div>
 		</div>
-		<div class="col-lg-3">
-			<img class="thumbnail" src="{% static 'images/cartoon.png' %}">
-			<div class="box-element product">
-				<h9>Produkt</h9>
-				<hr>
-				<h9>200x160x100 mm <br/>- opakowanie białe 3-warstwowe<br/></h9>
-        		<button class="btn btn-outline-secondary add-btn">Dodaj</button>
-				<a class="btn btn-outline-success" href="#">Zobacz</a>
-				<h5 style="display: inline-block;float: right;">30 zł</h5>
-			</div>
-		</div>
-		<div class="col-lg-3">
-			<img class="thumbnail" src="{% static 'images/cartoon.png' %}">
-			<div class="box-element product">
-				<h9><strong>Produkt</strong></h9>
-				<hr>
-				<h9>200x160x100 mm <br/>- opakowanie białe 3-warstwowe<br/></h9>
-				<button class="btn btn-outline-secondary add-btn">Dodaj</button>
-				<a class="btn btn-outline-success" href="#">Zobacz</a>
-				<h5 style="display: inline-block;float: right;">30 zł</h5>
-			</div>
-		</div>
-		<div class="col-lg-3">
-			<img class="thumbnail" src="{% static 'images/cartoon.png' %}">
-			<div class="box-element product">
-				<h9><strong>Produkt</strong></h9>
-				<hr>
-				<h9>200x160x100 mm <br/>- opakowanie białe 3-warstwowe<br/></h9>
-				<button class="btn btn-outline-secondary add-btn">Dodaj</button>
-				<a class="btn btn-outline-success" href="#">Zobacz</a>
-				<h5 style="display: inline-block;float: right;">30 zł</h5>
-			</div>
-		</div>
-
-		<div class="col-lg-3">
-			<img class="thumbnail" src="{% static 'images/cartoon.png' %}">
-			<div class="box-element product">
-				<h9><strong>Produkt</strong></h9>
-				<hr>
-				<h9>200x160x100 mm <br/>- opakowanie białe 3-warstwowe<br/></h9>
-				<button class="btn btn-outline-secondary add-btn">Dodaj</button>
-				<a class="btn btn-outline-success" href="#">Zobacz</a>
-				<h5 style="display: inline-block;float: right;">30 zł</h5>
-			</div>
-		</div>
-		<div class="col-lg-3">
-			<img class="thumbnail" src="{% static 'images/cartoon.png' %}">
-			<div class="box-element product">
-				<h9><strong>Produkt</strong></h9>
-				<hr>
-				<h9>200x160x100 mm <br/>- opakowanie białe 3-warstwowe<br/></h9>
-				<button class="btn btn-outline-secondary add-btn">Dodaj</button>
-				<a class="btn btn-outline-success" href="#">Zobacz</a>
-				<h5 style="display: inline-block;float: right;">30 zł</h5>
-			</div>
-		</div>
-		<div class="col-lg-3">
-			<img class="thumbnail" src="{% static 'images/cartoon.png' %}">
-			<div class="box-element product">
-				<h9><strong>Produkt</strong></h9>
-				<hr>
-				<h9>200x160x100 mm <br/>- opakowanie białe 3-warstwowe<br/></h9>
-				<button class="btn btn-outline-secondary add-btn">Dodaj</button>
-				<a class="btn btn-outline-success" href="#">Zobacz</a>
-				<h5 style="display: inline-block;float: right;">30 zł</h5>
-			</div>
-		</div>
-		<div class="col-lg-3">
-			<img class="thumbnail" src="{% static 'images/cartoon.png' %}">
-			<div class="box-element product">
-				<h9><strong>Produkt</strong></h9>
-				<hr>
-				<h9>200x160x100 mm <br/>- opakowanie białe 3-warstwowe<br/></h9>
-				<button class="btn btn-outline-secondary add-btn">Dodaj</button>
-				<a class="btn btn-outline-success" href="#">Zobacz</a>
-				<h5 style="display: inline-block;float: right;">30 zł</h5>
-			</div>
-		</div>
+		{% endfor %}
 	</div>
 
 
