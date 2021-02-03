@@ -91,6 +91,7 @@ h1,h2,h3,h4,h5,h6{
 
 .chg-quantity:hover{
 	opacity: .6;
+	background-color: #d9830c;
 }
 
 
