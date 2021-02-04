@@ -17,6 +17,15 @@ class Product(models.Model):
     name = models.CharField(max_length=1000, null=True)
     price = models.FloatField()
     digital = models.BooleanField(default=False, null=True)
+    image = models.ImageField(null = True)
+
+    @property
+    def imageURL(self):
+        try:
+            url = self.image.url
+        except:
+            url = ''
+        return url
 
     def __str__(self):
         return self.name
