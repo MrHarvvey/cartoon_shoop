@@ -10,7 +10,7 @@
 				<h9><strong>Produkt</strong></h9>
 				<hr>
 				<h9>{{product.name}}<br/><br/><br/></h9>
-				<button class="btn btn-outline-secondary add-btn">Dodaj</button>
+				<button data-product={{product.id}} data-action="add" class="btn btn-outline-secondary add-btn update-cart">Dodaj</button>
 				<a class="btn btn-outline-success" href="#">Zobacz</a>
 				<h5 style="display: inline-block;float: right;">{{product.price|floatformat:2}} zł</h5>
 			</div>
