@@ -12,8 +12,8 @@
 				<br>
 				<table class="table">
 					<tr>
-						<th><h5>Przedmioty: <strong>3</strong></h5></th>
-						<th><h5>Suma:<strong> 42 zł</strong></h5></th>
+						<th><h5>Przedmioty: <strong>{{order.get_total_all_items}}</strong></h5></th>
+						<th><h5>Suma:<strong> {{order.get_cart_total_price|floatformat:2}}zł</strong></h5></th>
 						<th>
 							<a  style="float:right; margin:5px;" class="btn btn-success" href="{% url 'checkout' %}">Podsumowanie</a>
 						</th>
@@ -54,4 +54,4 @@
 
 
 
-{% endblock content %}
+{% endblock content %} 

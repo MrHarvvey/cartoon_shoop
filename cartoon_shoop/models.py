@@ -39,6 +39,27 @@ class Order(models.Model):
     def __str__(self):
         return self.transation_id
 
+    @property
+    def get_cart_total_price(self):
+        orderitem = self.orderitem_set.all()
+        total = sum([item_total.get_total for item_total in orderitem])
+        return total
+
+    @property
+    def get_total_all_items(self):
+        all_items = self.orderitem_set.all()
+        total2 = sum([total.quantity for total in all_items])
+        return total2
+        
+    @property
+    def zwroc_cokolwiek(self):
+        zwroc_cokolwiek = 20000
+        return zwroc_cokolwiek
+    
+    
+
+    
+
 
 class OrderItem(models.Model):
     order = models.ForeignKey(Order, on_delete=models.SET_NULL, null=True)
