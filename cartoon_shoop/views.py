@@ -32,4 +32,4 @@ def checkout(request):
 	return render(request, 'cartoon_shoop/checkout.html', context)
 
 def updateItem(request):
-	return JsonResponse ('Item was added', safe=False)
+	return JsonResponse('Item was added', safe=False)
