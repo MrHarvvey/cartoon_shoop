@@ -41,11 +41,9 @@ def updateItem(request):
 	orderItem, created = OrderItem.objects.get_or_create(order=order, product=product)
 	if action == 'add':
 		orderItem.quantity += 1
-		print(orderItem.quantity)
-		orderItem.save()
 	elif action == 'remove':
 		orderItem.quantity =- 1 
-		orderItem.save()
+	orderItem.save()
 
 	if orderItem.quantity <= 0:
 		orderItem.delete()
